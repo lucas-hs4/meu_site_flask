@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HQ Dragon - {% block title %}{% endblock %}</title>
+
+        <style>
+        body {
+        background-color: #4682B4;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        }
+
+        header {
+        background-color: #000000;
+        color: #C0C0C0;
+        padding: 25px;
+        text-align: center;
+        }
+
+        nav {
+        background-color: #34459e;
+        padding: 10px;
+        text-align: center;
+        }
+
+        nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        }
+
+        nav a:hover {
+        color: #1abc9c;
+        }
+
+        .conteudo {
+        padding: 40px;
+        text-align: center;
+        }
+
+        .logo-link {
+        text-decoration: none;
+        color: inherit;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<header>
+<h1><a href="/" class="logo-link">HQ Dragon</a></h1>
+</header>
+
+<nav>
+    <a href="/"Home</a>
+    <a href="/sobre">Sobre Mim</a>
+</nav>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p style="text-align: center; padding 20px;">@2026 HQ Dragon</p>
+</footer>
+
+</body>
+</html>
